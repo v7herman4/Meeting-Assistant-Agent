@@ -24,4 +24,4 @@ First create an app registration in Azure.
 - OnlineMeetings.Read
 - OnlineMeetingTranscript.Read.All
 12. Make sure to "Grand admin consent" for each item. The result should look like below:
-
+![Grant-admin-consent](images/Grant-admin-consent.png
