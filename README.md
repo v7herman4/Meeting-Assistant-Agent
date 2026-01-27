@@ -4,6 +4,8 @@
 - [Solution Overview](#overview)
 - [Requirements for Installation](documentation/requirements-for-installation.md) 
 - [Installation Guide](documentation/installation-guide.md)
+- [How To Use This Agent](documentation/how-to-use-this-agent.md)
+
 
 ## Overview
 As of the creation of this Agent (January 2026) Microsoft has yet to release a low-code connectivity feature for agents created in Copilot Studio to access Microsoft Graph information. This includes access to information in Microsorft Teams and events.
