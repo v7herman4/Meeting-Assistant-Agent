@@ -10,7 +10,7 @@ As of the creation of this Agent (January 2026) Microsoft has yet to release a l
 
 The solution in this repo contains an agent created in Copilot Studio and a custom connector with Definitions tied to the Microsoft Graph to retrieve information about meetings in Microsoft Teams including transcripts. Transcripts are only available for meetings that have transcription or recording turned on.
 
-See the [Requirements for Installation](requirements-for-installation.md) for what's required to install the solution.
+See the [Requirements for Installation](documentation/requirements-for-installation.md) for what's required to install the solution.
 
 See the [Installation Guide](documentation/installation-guide.md) for step by step on installing this solution in your own Power Platform environment.
 
