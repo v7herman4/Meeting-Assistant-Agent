@@ -1,8 +1,8 @@
 # How To Use This Agent
 
 ## Table of Contents
-- [Solution Overview](#overview)
-- [Requirements for Installation](documentation/requirements-for-installation.md) 
-- [Installation Guide](documentation/installation-guide.md)
-- [How To Use This Agent](documentation/how-to-use-this-agent.md)
+- [Solution Overview](../#overview)
+- [Requirements for Installation](requirements-for-installation.md) 
+- [Installation Guide](installation-guide.md)
+- [How To Use This Agent](how-to-use-this-agent.md)
 
