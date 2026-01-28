@@ -1,12 +1,13 @@
 # Installation Guide
 
 ## Table of Contents
-- [Solution Overview](../README.md#overview)
-- [Requirements for Installation](requirements-for-installation.md)
-- [How To Use This Agent](how-to-use-this-agent.md)
+- [Solution Overview](#overview)
+- [Requirements for Installation](documentation/requirements-for-installation.md) 
+- [Installation Guide](documentation/installation-guide.md)
+- [How To Use This Agent](documentation/how-to-use-this-agent.md)
 
 
-### Create an App Registratio in Azure
+### Create an App Registration in Azure
 First create an app registration in Azure.
 
 1. Navigate to portal.azure.com
@@ -24,4 +25,5 @@ First create an app registration in Azure.
 - OnlineMeetings.Read
 - OnlineMeetingTranscript.Read.All
 12. Make sure to "Grand admin consent" for each item. The result should look like below:
+
 ![Grant-admin-consent](images/Grant-admin-consent.png)
