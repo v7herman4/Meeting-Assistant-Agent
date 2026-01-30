@@ -27,3 +27,38 @@ First create an app registration in Azure.
 12. Make sure to "Grand admin consent" for each item. The result should look like below:
 
 ![Grant-admin-consent](images/Grant-admin-consent.png)
+
+### Download the Solution
+Download the solution from the latest release: https://github.com/v7herman4/Meeting-Assistant-Agent/releases
+
+Make sure the download the file matching "MeetingAssistantAgent_x_x_x_x.zip"
+
+### Import the Solution
+In a Power Platform compatible browser where you are signed in to your work account, navigate to make.powerautomate.com
+
+![Import-solution](images/import-solution.png)
+
+Select the file "MeetingAssistantAgent_x_x_x_x.zip" from the location where you've downloaded it and click through the UI until the import beings.
+
+![currently-importing-solution](images/currently-importing-solution.png)
+
+Wait until the banner at the top of the page notes that the solution has finished importing.
+
+Click "Publish All Customizations". This step is mandatory.
+![Publish-all-customizations](images/publish-all-customizations.png)
+
+Once "Publishing all customizations" completes, edit the custom connector.
+
+### Edit the Custom Connector
+
+Click the "Meeting Assistant Agent" solution to open the solution.
+Click "Custom connectors (1)", click the triple-dots next to "Handover 2" and click "edit".
+
+![Edit-Custom_Connector](images/edit-custom-connector.png)
+
+Click on "Edit" to ddit the connector configuration
+![Edit-Connector-Configuration](images/edit-connector-configuration.png)
+
+
+
+![](images/)
