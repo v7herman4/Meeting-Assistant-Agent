@@ -28,13 +28,15 @@ First create an app registration in Azure.
 
 ![Grant-admin-consent](images/Grant-admin-consent.png)
 
+Leave this tab open in your browser as you will have to come back to this configuration at the end of [Edit the Custom Connector](#edit-the-custom-connector).
+
 ### Download the Solution
 Download the solution from the latest release: https://github.com/v7herman4/Meeting-Assistant-Agent/releases
 
 Make sure the download the file matching "MeetingAssistantAgent_x_x_x_x.zip"
 
 ### Import the Solution
-In a Power Platform compatible browser where you are signed in to your work account, navigate to make.powerautomate.com
+In a Power Platform compatible browser where you are signed in to your work account, in a new tab, navigate to make.powerautomate.com
 
 ![Import-solution](images/import-solution.png)
 
@@ -93,6 +95,68 @@ Once the connector has finished updating, your resulting OAuth 2.0 configuration
 
 ![security-configuration-final](images/security-configuration-final.png)
 
-From the bottom configuration, copy the Redirect URL by click on the copy icon to the right of the value. You will need this later.
+From the bottom configuration, copy the Redirect URL by click on the copy icon to the right of the value. 
+
+![redirect-url](images/redirect-url.png)
+
+Click "X Close" at the top of the page to close the Custom Connector configuration.
+
+You can now close this browser tab with the custom connector configuration.
+
+In the previous browswer tab where you were editing the app registration, navigate to Manage, then "Authentication (Preview)".
+
+Click on "+ Add Redirect URI"
+
+On the right pop-up, click on "Web". In the text box "Redirect URI" enter the redirect url copied from the custom connector (see step above).
+
+From the bottom of the pop-up, click "Configure". Then click "Cancel" to exit that pop-up.
+
+You can now close this tab!
+
+### Update the Agent Flow
+
+Back on the tab with the solution open, click on "Cloud flows (1)". 
+From the list on the right, click on "Summarize Meeting from JoinURL"
+
+![edit-flow](images/edit-flow.png)
+
+We must re-establish the connections used in the Agent Flow now that we've updated the custom connector security. 
+
+On the new tab that opened, click "Edit" from the top left to edit the flow.
+
+From the step labeled "Get Online Meeting by Join URL", click the three dots
+
+![fix-connection-1](images/fix-connection-1)
+
+From the connection configuration, click "Add a connection"
+
+![fix-connection-2](images/fix-connection-2)
+
+You will get a pop-up prompting you to login with your Microsoft Entra Id credentials. Complete the log in.
+
+The step should now show like: 
+
+![fix-connection-3](images/fix-connection-3)
+
+These steps must be repeated for other steps that have an invalid connection. Expand the steps by click on the "For each" step. Repeat the connection configuration for the following steps:
+- List transcripts (me)
+- Get transcript content me JSON wrapped
+
+Click on "Publish" from the top-menu to publish your Agent Flow.
+
+Once the publish is complete, click on "<- Back" from the top-left menu.
+
+Ensure the Agent Flow is turned on. If not, click on "Turn On". The Agent Flow status should look like so:
+
+![fix-connection-4](images/fix-connection-4)
+
+Close this browser tab.
+
+### Configure the Agent
+The last step left is to publish your agent.
+
+
+
+![](images/)
 
 ![](images/)
