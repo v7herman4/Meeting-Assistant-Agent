@@ -44,21 +44,55 @@ Select the file "MeetingAssistantAgent_x_x_x_x.zip" from the location where you'
 
 Wait until the banner at the top of the page notes that the solution has finished importing.
 
+Please note: you may get a "imported successfully with warnings" message. This is normal and will be mitigated in subsequent steps.
+
 Click "Publish All Customizations". This step is mandatory.
+
 ![Publish-all-customizations](images/publish-all-customizations.png)
 
 Once "Publishing all customizations" completes, edit the custom connector.
 
+![publish-successful](images/publish-successful.png)
+
 ### Edit the Custom Connector
 
 Click the "Meeting Assistant Agent" solution to open the solution.
+
 Click "Custom connectors (1)", click the triple-dots next to "Handover 2" and click "edit".
 
 ![Edit-Custom_Connector](images/edit-custom-connector.png)
 
-Click on "Edit" to ddit the connector configuration
+Click on "Edit" to edit the connector configuration
+
 ![Edit-Connector-Configuration](images/edit-connector-configuration.png)
 
+From the "General information" screen, click "Security ->" on the bottom right to go to the Security screen.
 
+Click "Edit" to edit the authentication configuration.
+
+![edit-connector-auth-type](images/edit-connector-auth-type.png)
+
+Make sure the "Authentication type" at the top of the screen is set to "OAuth 2.0".
+
+On the form "OAuth 2.0" below, set the following values as noted:
+
+1. Identity Provider: Azure Active Directory
+2. Enable Service Principal support: leave unchecked
+3. Client ID: use the client id created in the section [Create an App Registration in Azure](#create-an-app-registration-in-azure)
+4. Secret options: Use client secret
+5. Client secret: use the client secret created in the section [Create an App Registration in Azure](#create-an-app-registration-in-azure)
+6. Authorization URL: https://login.microsoftonline.com
+7. Tenant ID: use the tenant id from the app registration created in the section [Create an App Registration in Azure](#create-an-app-registration-in-azure)
+8. Resource URL: https://graph.microsoft.com
+9. Enable on-behalf-of login: false
+10. Scope: offline_access User.Read Calendars.Read OnlineMeetings.Read OnlineMeetingTranscript.Read.All
+
+From the top menu, click on "Update Connector" to save your changes.
+
+Once the connector has finished updating, your resulting OAuth 2.0 configuration should look like so:
+
+![security-configuration-final](images/security-configuration-final.png)
+
+From the bottom configuration, copy the Redirect URL by click on the copy icon to the right of the value. You will need this later.
 
 ![](images/)
