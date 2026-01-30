@@ -126,17 +126,17 @@ On the new tab that opened, click "Edit" from the top left to edit the flow.
 
 From the step labeled "Get Online Meeting by Join URL", click the three dots
 
-![fix-connection-1](images/fix-connection-1)
+![fix-connection-1](images/fix-connection-1.png)
 
 From the connection configuration, click "Add a connection"
 
-![fix-connection-2](images/fix-connection-2)
+![fix-connection-2](images/fix-connection-2.png)
 
 You will get a pop-up prompting you to login with your Microsoft Entra Id credentials. Complete the log in.
 
 The step should now show like: 
 
-![fix-connection-3](images/fix-connection-3)
+![fix-connection-3](images/fix-connection-3.png)
 
 These steps must be repeated for other steps that have an invalid connection. Expand the steps by click on the "For each" step. Repeat the connection configuration for the following steps:
 - List transcripts (me)
@@ -148,7 +148,7 @@ Once the publish is complete, click on "<- Back" from the top-left menu.
 
 Ensure the Agent Flow is turned on. If not, click on "Turn On". The Agent Flow status should look like so:
 
-![fix-connection-4](images/fix-connection-4)
+![fix-connection-4](images/fix-connection-4.png)
 
 Close this browser tab.
 
